@@ -16,6 +16,7 @@ import {
 } from "./todoUtils";
 import "./App.css";
 
+// this is the storage key
 const STORAGE_KEY = "todo_app_todos";
 
 /**
