@@ -1,6 +1,6 @@
 export const generateId = () =>
   `todo_${Date.now()}_${Math.random().toString(36).substring(2, 11)}`;
-
+// Sprint 1 - Utility functions: createTodo, toggleTodo, deleteTodo by [Wafaa]
 export const createTodo = (text) => ({
   id: generateId(),
   text: text.trim(),
@@ -22,14 +22,14 @@ export const filterTodos = (todos, filter) => {
 
 export const toggleTodo = (todos, id) =>
   todos.map((todo) =>
-    todo.id === id ? { ...todo, completed: !todo.completed } : todo
+    todo.id === id ? { ...todo, completed: !todo.completed } : todo,
   );
 
 export const deleteTodo = (todos, id) => todos.filter((todo) => todo.id !== id);
 
 export const editTodo = (todos, id, newText) =>
   todos.map((todo) =>
-    todo.id === id ? { ...todo, text: newText.trim() } : todo
+    todo.id === id ? { ...todo, text: newText.trim() } : todo,
   );
 
 export const setPriority = (todos, id, priority) =>
