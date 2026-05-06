@@ -1,6 +1,8 @@
 import React from "react";
 import PropTypes from "prop-types";
 
+// Sprint 2 - Filter component: All, Active, Completed by [Aya]
+
 const FILTERS = ["all", "active", "completed"];
 
 const TodoFilter = ({ currentFilter, onFilterChange, activeCount, onClearCompleted, totalCount }) => (
