@@ -16,7 +16,7 @@ import {
 } from "./todoUtils";
 import "./App.css";
 
-// this is the storage key
+// Sprint 1 - Core todo functionality implemented by [Nour]
 const STORAGE_KEY = "todo_app_todos";
 
 /**
