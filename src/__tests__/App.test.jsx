@@ -1,7 +1,7 @@
 import React from "react";
 import { render, screen, fireEvent, within } from "@testing-library/react";
 import App from "../App";
-
+// Sprint 3 - Integration tests for App component by [Lydia]
 // ─── localStorage mock ────────────────────────────────────────
 const localStorageMock = (() => {
   let store = {};
