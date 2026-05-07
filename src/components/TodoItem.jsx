@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
-
+// Sprint 2 - TodoItem component with priority levels by [Mariam]
 const TodoItem = ({ todo, onToggle, onDelete, onEdit, onPriorityChange }) => {
   const [isEditing, setIsEditing] = useState(false);
   const [editText, setEditText] = useState(todo.text);
