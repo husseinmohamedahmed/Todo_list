@@ -25,13 +25,10 @@ jobs:
         run: npm install
 
       - name: Run tests and generate coverage
-        run: CI=true npm test -- --coverage --watchAll=false --coverageReporters=lcov
+        run: CI=true npm test -- --coverage --watchAll=false --coverageReporters=lcov --coverageReporters=text
 
       - name: SonarCloud Scan
         uses: SonarSource/sonarqube-scan-action@master
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
           SONAR_HOST_URL: https://sonarcloud.io
-        with:
-          args: >
-            -Dsonar.branch.name=main
