@@ -8,7 +8,7 @@ export const createTodo = (text) => ({
   createdAt: new Date().toISOString(),
   priority: "medium",
 });
-
+//Sprint 1: Jana has edited the filterTodos
 export const filterTodos = (todos, filter) => {
   switch (filter) {
     case "active":
